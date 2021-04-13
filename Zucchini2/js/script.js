@@ -74,5 +74,23 @@ for ( var i = 0; i < arrayZucchine.length; i++ ) {
     }
 }
 
-console.log(zucchineCorte);
-console.log(zucchineLunghe);
+// Imposto due variabili su 0 per il peso delle zucchine lunghe e corte
+var zucchineCortePeso = 0;
+var zucchineLunghePeso = 0;
+
+// Faccio un loop for sull'Array ZucchineCorte per prender il peso di ogni singola zucchina 
+for ( var j = 0; j < zucchineCorte.length; j++ ) {
+    var thisZucchinoCorto = zucchineCorte[j];
+    zucchineCortePeso += thisZucchinoCorto.peso;
+}
+
+console.log('Il peso totale delle zucchine corte è di' + ' ' + zucchineCortePeso + ' ' + 'grammi')
+
+// Faccio lo stesso con gli zucchini lunghi
+for ( var k = 0; k < zucchineLunghe.length; k++ ) {
+    var thisZucchinoLungo = zucchineLunghe[k];
+    zucchineLunghePeso += thisZucchinoLungo.peso;
+}
+
+console.log('Il peso totale delle zucchine lunghe è di' + ' ' + zucchineLunghePeso + ' ' + 'grammi')
+
